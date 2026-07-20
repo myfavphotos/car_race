@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>日本国内自動車レーストップカテゴリー</title>
+<style>
+  :root {
+    --navy: #1a2a4a;
+    --sf-color: #0b5fa5;
+    --gt-color: #b0182a;
+    --st-color: #1f7a4d;
+    --circuit-color: #6a3fa0;
+    --border: #d8dde3;
+    --label-bg: #eef1f5;
+    --header-bg: #1a2a4a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Yu Gothic", "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2733;
+    margin: 0;
+    padding: 32px 16px 64px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--navy);
+    margin: 0 0 24px;
+  }
+  .table-wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(20,30,50,0.08);
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 1100px;
+  }
+  caption {
+    caption-side: bottom;
+    text-align: left;
+    font-size: 0.75rem;
+    color: #6b7684;
+    padding: 14px 18px 18px;
+    line-height: 1.7;
+  }
+  th, td {
+    border: 1px solid var(--border);
+    padding: 10px 13px;
+    vertical-align: top;
+    font-size: 0.86rem;
+    line-height: 1.6;
+  }
+  thead th {
+    background: var(--header-bg);
+    color: #fff;
+    font-size: 0.92rem;
+    position: sticky;
+    top: 0;
+  }
+  th.col-sf { background: var(--sf-color); }
+  th.col-gt { background: var(--gt-color); }
+  th.col-st { background: var(--st-color); }
+  td.section-label {
+    background: var(--label-bg);
+    font-weight: 700;
+    color: var(--navy);
+    white-space: nowrap;
+  }
+  td.row-label {
+    background: #f8f9fb;
+    font-weight: 600;
+    white-space: nowrap;
+    color: #33404f;
+  }
+  tr.group-start td.section-label,
+  tr.group-start td.row-label {
+    border-top: 2px solid var(--navy);
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+  }
+  a:hover { border-bottom-style: solid; }
+  .src {
+    display: inline-block;
+    margin-left: 4px;
+    margin-top: 4px;
+    font-size: 0.71rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    white-space: nowrap;
+  }
+  .src.sf { color: var(--sf-color); }
+  .src.gt { color: var(--gt-color); }
+  .src.st { color: var(--st-color); }
+  .src.circuit { color: var(--circuit-color); }
+  .note {
+    color: #7a8493;
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+<h1>カテゴリー</h1>
+<div class="table-wrap">
+<table>
+<caption>
+  出典：SUPER FORMULA公式サイト（superformula.net）、JAF公式サイト（motorsports.jaf.or.jp）、GAZOO Racing公式、
+  SUPER GT公式サイト（supergt.net／about.supergt.net）、スーパー耐久公式サイト（supertaikyu.com）、各サーキット公式サイト。
+  レギュレーションは2026年シーズンの最新情報のみを記載。日程・規定は2026年7月時点の情報で、今後変更の可能性があります。<br>
+  <span class="src sf">水色バッジ</span> = スーパーフォーミュラ側の出典　
+  <span class="src gt">赤バッジ</span> = スーパーGT側の出典　
+  <span class="src st">緑バッジ</span> = スーパー耐久側の出典　
+  <span class="src circuit">紫バッジ</span> = 開催サーキットの公式カレンダー
+</caption>
+<thead>
+<tr>
+  <th>日本国内自動車レーストップカテゴリー</th>
+  <th></th>
+  <th class="col-sf">スーパーフォーミュラ</th>
+  <th class="col-gt">スーパーGT</th>
+  <th class="col-st">スーパー耐久</th>
+</tr>
+</thead>
+<tbody>
+
+<tr class="group-start">
+  <td class="section-label" rowspan="4">車両レギュレーション</td>
+  <td class="row-label">車体</td>
+  <td>
+    ダラーラ社製「SF23」ワンメイクシャシー（全車共通）。
+    <a class="src sf" href="https://superformula.net/sf3/about_sf/about_machine/" target="_blank" rel="noopener">公式：マシン紹介</a>
+  </td>
+  <td>
+    GT500：トヨタGR Supra／日産Z／ホンダCIVIC TYPE-Rの3車種（共通カーボンモノコック使用）。GT300：GT300車両規定・GT300マザーシャシー（GT300MC）・FIA GT3のいずれかで15車種が混在。
+    <a class="src gt" href="https://about.supergt.net/regulation/technical/" target="_blank" rel="noopener">公式：技術規則</a>
+  </td>
+  <td>
+    改造市販車ベースの5クラス（ST-1/2/3/4/5F/5R）に加え、FIA GT3のST-X、GT4のST-Z、TCRのST-TCR、STMO認定の開発車両によるST-Q、2026年新設のST-USAを含む全11クラスが同一レースで混走。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">パワーユニット（排気量／気筒数／過給機など）</td>
+  <td>
+    2.0L直列4気筒 直噴ターボ「NRE」（トヨタ製TRD01Fまたはホンダ製、約550馬力）。年間使用は2基まで。
+    <a class="src sf" href="https://superformula.net/sf3/about_sf/about_machine/" target="_blank" rel="noopener">公式：マシン紹介</a>
+    <a class="src sf" href="https://motorsports.jaf.or.jp/-/media/1/3375/3379/3400/3462/3466/3492/2026_touitsu_kisoku_superformula_20260101.pdf" target="_blank" rel="noopener">JAF：2026年統一規則</a>
+  </td>
+  <td>
+    GT500：2.0L直列4気筒シングルターボに統一（2026年から年間1基化）。GT300：5.0L NAから2.0Lターボまで車種ごとに多様（FIA GT3は排気量・過給機・レイアウトとも規定なしでBoPにより調整）。
+    <a class="src gt" href="https://about.supergt.net/regulation/technical/" target="_blank" rel="noopener">公式：技術規則</a>
+  </td>
+  <td>
+    クラスにより大きく異なる。改造市販車クラスは排気量で細分化、ST-XはGT3規定各種、ST-ZはGT4規定、ST-TCRは2.0L直4ターボ規定、ST-Qは各メーカー持ち込みの開発中エンジン（水素・バイオ燃料車両なども参戦）。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">タイヤ</td>
+  <td>
+    ヨコハマタイヤのワンメイク。タイヤウォーマー使用禁止。
+    <a class="src sf" href="https://superformula.net/sf3/about_sf/about_machine/" target="_blank" rel="noopener">公式：マシン紹介</a>
+  </td>
+  <td>
+    ブリヂストン・ヨコハマ・ミシュラン・ダンロップ等が競う「タイヤ戦争」の最終シーズン（2027年からGT500・GT300ともワンメイク化予定）。
+    <a class="src gt" href="https://about.supergt.net/regulation/technical/" target="_blank" rel="noopener">公式：技術規則</a>
+  </td>
+  <td>
+    全クラス・全チーム共通でブリヂストンのワンメイク供給（クラスによりブランド指定あり）。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">その他</td>
+  <td>
+    全車ダラーラ製シャシー・ヨコハマタイヤのワンメイクで、エンジンのみトヨタ・ホンダの2社供給というイコールコンディション思想。
+    <a class="src sf" href="https://superformula.net/sf2/whatissf" target="_blank" rel="noopener">公式：楽しみ方</a>
+  </td>
+  <td>
+    成績に応じ次戦の性能を引き下げる「サクセスウェイト制」（上限100kg）を採用。2026年からGT500にも「サクセス給油リストリクター」を導入。
+    <a class="src gt" href="https://about.supergt.net/regulation/sporting/" target="_blank" rel="noopener">公式：競技規則</a>
+  </td>
+  <td>
+    ピットクルー人数を制限（タイヤ交換2名以下・給油1名まで）することで、資金力の異なるチームが互角に戦えるよう設計。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr class="group-start">
+  <td class="section-label" rowspan="6">競技レギュレーション</td>
+  <td class="row-label">予選</td>
+  <td>
+    ノックアウト方式2段階。Q1はA/B組に分かれ各10分実施、各組上位6台がQ2進出。Q2は7分で最速タイムがポールポジション。予選順位にもポイント付与（ポール3点・2位2点・3位1点）。
+    <a class="src sf" href="https://superformula.net/sf2/whatissf" target="_blank" rel="noopener">公式：楽しみ方</a>
+  </td>
+  <td>
+    Q1・Q2の2回制、各セッションを1名ずつのドライバーが担当してタイムを競う。
+    <a class="src gt" href="https://about.supergt.net/regulation/sporting/" target="_blank" rel="noopener">公式：競技規則</a>
+  </td>
+  <td>
+    1台に登録された2名のドライバー（A・B）のベストタイム合算方式（クラスにより異なる場合あり）。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">決勝</td>
+  <td>
+    予選順位のグリッドからスタンディングスタート。規定周回数を最初に走り切った車両が優勝。
+    <a class="src sf" href="https://superformula.net/sf2/whatissf" target="_blank" rel="noopener">公式：楽しみ方</a>
+  </td>
+  <td>
+    ローリングスタート方式。GT500クラス全車が前列、GT300クラス全車が続くグリッド編成。
+    <a class="src gt" href="https://about.supergt.net/regulation/sporting/" target="_blank" rel="noopener">公式：競技規則</a>
+  </td>
+  <td>
+    全11クラス混走のローリングスタート。クラスごとに順位とシリーズタイトルを争う。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">走行距離／時間</td>
+  <td>
+    1レースあたり概ね180km前後（無給油で完走できる距離）。
+    <a class="src sf" href="https://motorsports.jaf.or.jp/-/media/1/3375/3379/3400/3462/3466/3492/2026_touitsu_kisoku_superformula_20260101.pdf" target="_blank" rel="noopener">JAF：2026年統一規則</a>
+  </td>
+  <td>
+    2026年は300kmレース×6戦、3時間の耐久レース×2戦（第2戦富士・第7戦オートポリス）の2フォーマット。
+    <a class="src gt" href="https://supergt.net/news_race_report/2026-super-gt%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E5%90%84%E5%A4%A7%E4%BC%9A%E3%81%AE%E6%B1%BA%E5%8B%9D%E3%83%AC%E3%83%BC%E3%82%B9%E8%B7%9D%E9%9B%A2-%E6%99%82%E9%96%93%E3%81%AB%E3%81%A4%E3%81%84" target="_blank" rel="noopener">公式：距離／時間発表</a>
+  </td>
+  <td>
+    大会ごとに異なり、4時間（もてぎ・SUGO）、5時間（鈴鹿・オートポリス）、3時間×2レース（岡山）、24時間（富士24時間レース）など幅広い設定。
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">公式：レースカレンダー</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">ドライバー交代</td>
+  <td>
+    1台につき1名のドライバーが全レースを走行（ドライバー交代なし）。
+    <a class="src sf" href="https://superformula.net/sf2/whatissf" target="_blank" rel="noopener">公式：楽しみ方</a>
+  </td>
+  <td>
+    1台を2名以上のドライバーが分担し、レース中に必ずドライバー交代を実施（決勝は必ずピットインして給油を伴うドライバー交代を行う）。
+    <a class="src gt" href="https://about.supergt.net/regulation/sporting/" target="_blank" rel="noopener">公式：競技規則</a>
+  </td>
+  <td>
+    1台に2〜4名（A〜Dドライバー）を登録し、大会ごとの規定回数のドライバー交代が義務。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">タイヤ交換・給油</td>
+  <td>
+    レース中の給油はなし。タイヤ4本交換が義務で、先頭車両が10周目の第1セーフティカーライン通過後から最終周回に入るまでに完了必須（未消化は失格）。ウェット宣言時は交換義務なし。
+    <a class="src sf" href="https://motorsports.jaf.or.jp/-/media/1/3375/3379/3400/3462/3466/3492/2026_touitsu_kisoku_superformula_20260101.pdf" target="_blank" rel="noopener">JAF：2026年統一規則</a>
+  </td>
+  <td>
+    300kmレースは最低1回の給油が義務。給油中はドライバー交代とその補助作業以外は禁止。タイヤ交換は最大2名で担当（2輪交換→給油→残り2輪交換が定石）。
+    <a class="src gt" href="https://about.supergt.net/regulation/sporting/" target="_blank" rel="noopener">公式：競技規則</a>
+  </td>
+  <td>
+    タイヤ交換は2名以下、給油は1名までとピットクルーを制限。給油中はドライバー交代関連作業以外の一切が禁止。フルコースイエロー中のピットインは原則禁止（セーフティカー導入時は可）。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr>
+  <td class="row-label">その他</td>
+  <td>
+    ピット作業員は最大7名（うち1名は車両誘導専従）。タイヤは平置き必須で、車両に立てかけたりピット内に投げたりするとペナルティ対象。
+    <a class="src sf" href="https://motorsports.jaf.or.jp/-/media/1/3375/3379/3400/3462/3466/3492/2026_touitsu_kisoku_superformula_20260101.pdf" target="_blank" rel="noopener">JAF：2026年統一規則</a>
+  </td>
+  <td>
+    ピットロード作業は7名まで、同時作業は5名まで。タイヤ交換時にホイールナットが脱落した場合は必ず回収が必要。
+    <a class="src gt" href="https://about.supergt.net/regulation/sporting/" target="_blank" rel="noopener">公式：競技規則</a>
+  </td>
+  <td>
+    フルコースイエロー発令中は理由を問わずピットレーン進入禁止（セーフティカー導入時は可）。給油中は車両に指が触れた時点でピット作業違反となる厳格な運用。
+    <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
+  </td>
+</tr>
+
+<tr class="group-start">
+  <td class="section-label">2026年参加者</td>
+  <td class="row-label">チーム数／ドライバー数</td>
+  <td>
+    16チーム24台（新規参戦2チームを含む。ルーキー6名、海外勢7名を含む顔ぶれ）。
+    <a class="src sf" href="https://superformula.net/sf3/release/24559/" target="_blank" rel="noopener">公式：参戦体制発表</a>
+  </td>
+  <td>
+    43台（GT500クラス14台・3車種、GT300クラス29台・15車種）。ドライバーは96名以上が参戦予定。
+    <a class="src gt" href="https://toyotagazooracing.com/jp/supergt/about/2026/" target="_blank" rel="noopener">出典：GAZOO Racing「SUPER GTとは？」2026</a>
+  </td>
+  <td>
+    大会により台数が変動。第3戦「NAPAC富士24時間レース」は11クラス62台が参戦。
+    <a class="src st" href="https://www.as-web.jp/domestic/1318760" target="_blank" rel="noopener">出典：autosport web</a>
+  </td>
+</tr>
+
+<tr class="group-start">
+  <td class="section-label">2026年競技回数／年</td>
+  <td></td>
+  <td>
+    全7大会12戦（5大会が1大会2レース制、オートポリス・SUGOの2大会は1レース制）。
+    <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">公式：レースカレンダー</a>
+  </td>
+  <td>
+    全8戦を予定（うち第3戦セパン大会〈マレーシア〉は開催延期）。
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">公式：カレンダー</a>
+  </td>
+  <td>
+    全7戦（6サーキットで開催、富士スピードウェイのみ年2回開催）。
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">公式：レースカレンダー</a>
+  </td>
+</tr>
+
+<tr class="group-start">
+  <td class="section-label" rowspan="12">2026年日程</td>
+  <td class="row-label">1月 日程／開催場所（サーキット名／所在地）</td>
+  <td class="note">オフシーズン（開催なし）</td>
+  <td class="note">オフシーズン（開催なし）</td>
+  <td class="note">オフシーズン（開催なし）</td>
+</tr>
+<tr>
+  <td class="row-label">2月 日程／開催場所（サーキット名／所在地）</td>
+  <td class="note">開催なし（プレシーズンテスト：2/25-26　鈴鹿サーキット）</td>
+  <td class="note">開催なし</td>
+  <td class="note">開催なし</td>
+</tr>
+<tr>
+  <td class="row-label">3月 日程／開催場所（サーキット名／所在地）</td>
+  <td class="note">開催なし</td>
+  <td class="note">開催なし</td>
+  <td>
+    第1戦：3/21(土)-22(日)　モビリティリゾートもてぎ（栃木県／開幕戦・4時間×2レース）<br>
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
+    <a class="src circuit" href="https://www.mr-motegi.jp/calendar_m/race.html" target="_blank" rel="noopener">もてぎ公式カレンダー</a>
+  </td>
+</tr>
+<tr>
+  <td class="row-label">4月 日程／開催場所（サーキット名／所在地）</td>
+  <td>
+    第1戦・第2戦：4/4(土)-5(日)　モビリティリゾートもてぎ（開幕戦）／第3戦：4/25(土)-26(日)　オートポリス<br>
+    <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
+    <a class="src circuit" href="https://www.mr-motegi.jp/calendar_m/race.html" target="_blank" rel="noopener">もてぎ公式カレンダー</a>
+    <a class="src circuit" href="https://autopolis.jp/ap/member/sports-run/racing-course-schedule/" target="_blank" rel="noopener">オートポリス公式カレンダー</a>
+  </td>
+  <td>
+    第1戦：4/11(土)-12(日)　岡山国際サーキット（岡山県／開幕戦）<br>
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
+    <a class="src circuit" href="https://www.okayama-international-circuit.jp/event/" target="_blank" rel="noopener">岡山国際サーキット公式カレンダー</a>
+  </td>
+  <td>
+    第2戦：4/18(土)-19(日)　鈴鹿サーキット（三重県／5時間レース）<br>
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
+    <a class="src circuit" href="https://www.suzukacircuit.jp/calendar_s/" target="_blank" rel="noopener">鈴鹿サーキット公式カレンダー</a>
+  </td>
+</tr>
+<tr>
+  <td class="row-label">5月 日程／開催場所（サーキット名／所在地）</td>
+  <td>
+    第4戦・第5戦：5/23(土)-24(日)　鈴鹿サーキット（三重県）<br>
+    <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
+    <a class="src circuit" href="https://www.suzukacircuit.jp/calendar_s/" target="_blank" rel="noopener">鈴鹿サーキット公式カレンダー</a>
+  </td>
+  <td>
+    第2戦：5/3(日)-4(月)　富士スピードウェイ（静岡県／3時間レース）<br>
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
+    <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
+  </td>
+  <td class="note">開催なし（公式テスト：5/14　富士スピードウェイ）</td>
+</tr>
+<tr>
+  <td class="row-label">6月 日程／開催場所（サーキット名／所在地）</td>
+  <td class="note">開催なし</td>
+  <td>
+    第3戦：6/20(土)-21(日)　セパン・インターナショナル・サーキット（マレーシア）※開催延期<br>
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
+    <a class="src circuit" href="https://www.sepangcircuit.com/events-listing" target="_blank" rel="noopener">セパンサーキット公式カレンダー</a>
+  </td>
+  <td>
+    第3戦：6/5(金)-7(日)　富士スピードウェイ（静岡県／NAPAC富士24時間レース）<br>
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
+    <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
+  </td>
+</tr>
+<tr>
+  <td class="row-label">7月 日程／開催場所（サーキット名／所在地）</td>
+  <td>
+    第6戦・第7戦：7/18(土)-19(日)　富士スピードウェイ（静岡県）<br>
+    <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
+    <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
+  </td>
+  <td class="note">開催なし</td>
+  <td>
+    第4戦：7/4(土)-5(日)　スポーツランドSUGO（宮城県／4時間×2レース）<br>
+    第5戦：7/25(土)-26(日)　オートポリス（大分県／5時間レース）<br>
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
+    <a class="src circuit" href="https://www.sportsland-sugo.co.jp/information/schedule/" target="_blank" rel="noopener">SUGO公式カレンダー</a>
+    <a class="src circuit" href="https://autopolis.jp/ap/member/sports-run/racing-course-schedule/" target="_blank" rel="noopener">オートポリス公式カレンダー</a>
+  </td>
+</tr>
+<tr>
+  <td class="row-label">8月 日程／開催場所（サーキット名／所在地）</td>
+  <td>
+    第8戦：8/8(土)-9(日)　スポーツランドSUGO（宮城県）<br>
+    <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
+    <a class="src circuit" href="https://www.sportsland-sugo.co.jp/information/schedule/" target="_blank" rel="noopener">SUGO公式カレンダー</a>
+  </td>
+  <td>
+    第4戦：8/1(土)-2(日)　富士スピードウェイ（静岡県）<br>
+    第5戦：8/22(土)-23(日)　鈴鹿サーキット（三重県）<br>
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
+    <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
+    <a class="src circuit" href="https://www.suzukacircuit.jp/calendar_s/" target="_blank" rel="noopener">鈴鹿サーキット公式カレンダー</a>
+  </td>
+  <td class="note">開催なし</td>
+</tr>
+<tr>
+  <td class="row-label">9月 日程／開催場所（サーキット名／所在地）</td>
+  <td class="note">開催なし</td>
+  <td>
+    第6戦：9/19(土)-20(日)　スポーツランドSUGO（宮城県）<br>
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
+    <a class="src circuit" href="https://www.sportsland-sugo.co.jp/information/schedule/" target="_blank" rel="noopener">SUGO公式カレンダー</a>
+  </td>
+  <td class="note">開催なし</td>
+</tr>
+<tr>
+  <td class="row-label">10月 日程／開催場所（サーキット名／所在地）</td>
+  <td>
+    第9戦・第10戦：10/10(土)-11(日)　富士スピードウェイ（静岡県）<br>
+    <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
+    <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
+  </td>
+  <td>
+    第7戦：10/17(土)-18(日)　オートポリス（大分県／3時間レース）<br>
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
+    <a class="src circuit" href="https://autopolis.jp/ap/member/sports-run/racing-course-schedule/" target="_blank" rel="noopener">オートポリス公式カレンダー</a>
+  </td>
+  <td>
+    第6戦：10/24(土)-25(日)　岡山国際サーキット（岡山県／3時間×2レース）<br>
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
+    <a class="src circuit" href="https://www.okayama-international-circuit.jp/event/" target="_blank" rel="noopener">岡山国際サーキット公式カレンダー</a>
+  </td>
+</tr>
+<tr>
+  <td class="row-label">11月 日程／開催場所（サーキット名／所在地）</td>
+  <td>
+    第11戦・第12戦：11/21(土)-22(日)　鈴鹿サーキット（三重県／最終戦・JAFグランプリ）<br>
+    <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
+    <a class="src circuit" href="https://www.suzukacircuit.jp/calendar_s/" target="_blank" rel="noopener">鈴鹿サーキット公式カレンダー</a>
+  </td>
+  <td>
+    第8戦：11/7(土)-8(日)　モビリティリゾートもてぎ（栃木県／最終戦）<br>
+    <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
+    <a class="src circuit" href="https://www.mr-motegi.jp/calendar_m/race.html" target="_blank" rel="noopener">もてぎ公式カレンダー</a>
+  </td>
+  <td>
+    第7戦：11/14(土)-15(日)　富士スピードウェイ（静岡県／最終戦）<br>
+    <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
+    <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
+  </td>
+</tr>
+<tr>
+  <td class="row-label">12月 日程／開催場所（サーキット名／所在地）</td>
+  <td class="note">開催なし</td>
+  <td class="note">開催なし</td>
+  <td class="note">開催なし</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</body>
+</html>
