@@ -16,6 +16,7 @@
     --header-bg: #1a2a4a;
   }
   * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
     font-family: "Hiragino Sans", "Yu Gothic", "Segoe UI", Arial, sans-serif;
     background: #f4f6f9;
@@ -38,6 +39,29 @@
     line-height: 1.7;
     text-align: center;
   }
+  .category-nav {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto 18px;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .category-nav a {
+    padding: 7px 12px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--navy);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .category-nav a:hover {
+    border-color: var(--navy);
+    background: var(--label-bg);
+  }
+  tr[id] { scroll-margin-top: 16px; }
   .table-wrap {
     max-width: 1400px;
     margin: 0 auto;
@@ -138,6 +162,15 @@
       margin-bottom: 16px;
       font-size: 0.82rem;
       text-align: left;
+    }
+    .category-nav {
+      margin-bottom: 16px;
+      justify-content: flex-start;
+    }
+    .category-nav a {
+      flex: 1 1 calc(50% - 4px);
+      padding: 8px 10px;
+      text-align: center;
     }
     .table-wrap {
       overflow: visible;
@@ -251,6 +284,12 @@
 <main>
 <h1>日本国内自動車レーストップカテゴリー（2026年7月時点）</h1>
 <p class="summary">主要3カテゴリーの概要と年間日程を把握できます。</p>
+<nav class="category-nav" aria-label="分類から探す">
+  <a href="#vehicle-regulations">車両レギュレーション</a>
+  <a href="#sporting-regulations">競技レギュレーション</a>
+  <a href="#season-overview">2026年実施概要</a>
+  <a href="#season-schedule">2026年日程</a>
+</nav>
 <div class="table-wrap">
 <table>
 <caption>
@@ -273,7 +312,7 @@
 </thead>
 <tbody>
 
-<tr class="group-start">
+<tr class="group-start" id="vehicle-regulations">
   <td class="section-label" rowspan="4">車両レギュレーション</td>
   <td class="row-label">車体</td>
   <td>
@@ -339,7 +378,7 @@
   </td>
 </tr>
 
-<tr class="group-start">
+<tr class="group-start" id="sporting-regulations">
   <td class="section-label" rowspan="6">競技レギュレーション</td>
   <td class="row-label">予選</td>
   <td>
@@ -436,7 +475,7 @@
   </td>
 </tr>
 
-<tr class="group-start">
+<tr class="group-start" id="season-overview">
   <td class="section-label" rowspan="2">2026年実施概要</td>
   <td class="row-label">チーム数／ドライバー数</td>
   <td>
@@ -469,7 +508,7 @@
   </td>
 </tr>
 
-<tr class="group-start">
+<tr class="group-start" id="season-schedule">
   <td class="section-label" rowspan="12">2026年日程</td>
   <td class="row-label">1月 日程／開催場所（サーキット名／所在地）</td>
   <td class="note">オフシーズン（開催なし）</td>
