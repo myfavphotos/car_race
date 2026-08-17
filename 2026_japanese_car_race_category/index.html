@@ -284,23 +284,36 @@
       border-bottom: 0;
     }
     td:not(.section-label):not(.row-label)::before {
-      display: block;
-      margin-bottom: 4px;
-      font-size: 0.72rem;
+      display: inline-block;
+      box-sizing: border-box;
+      min-height: 32px;
+      margin-bottom: 6px;
+      padding: 6px 112px 0 0;
+      font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 0.03em;
+      line-height: 1.3;
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: auto 28px;
     }
     td:not(.section-label):not(.row-label):nth-last-child(3)::before {
       color: var(--sf-color);
       content: "スーパーフォーミュラ";
+      background-image: url("https://superformula.net/sf3/images/common/logo.png");
     }
     td:not(.section-label):not(.row-label):nth-last-child(2)::before {
       color: var(--gt-color);
       content: "スーパーGT";
+      background-image: url("https://supergt.net/wp-content/uploads/2026/01/2026SeriesLogo.svg");
+      padding-right: 96px;
+      background-size: 88px 28px;
     }
     td:not(.section-label):not(.row-label):nth-last-child(1)::before {
       color: var(--st-color);
       content: "スーパー耐久";
+      background-image: url("https://supertaikyu.com/images/logo_hd.png");
+      padding-right: 168px;
     }
     .src {
       margin-top: 6px;
