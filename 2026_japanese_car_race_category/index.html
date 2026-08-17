@@ -7,9 +7,9 @@
 <style>
   :root {
     --navy: #1a2a4a;
-    --sf-color: #0b5fa5;
+    --sf-color: #1f7a4d;
     --gt-color: #b0182a;
-    --st-color: #1f7a4d;
+    --st-color: #0b5fa5;
     --circuit-color: #6a3fa0;
     --ticket-color: #9a4d00;
     --border: #d8dde3;
@@ -102,9 +102,50 @@
     position: sticky;
     top: 0;
   }
-  th.col-sf { background: var(--sf-color); }
-  th.col-gt { background: var(--gt-color); }
-  th.col-st { background: var(--st-color); }
+  th.col-sf {
+    background: #eaf6ef;
+    color: var(--sf-color);
+  }
+  th.col-gt {
+    background: #fdecef;
+    color: var(--gt-color);
+  }
+  th.col-st {
+    background: #e8f3ff;
+    color: var(--st-color);
+  }
+  .category-logo-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 6px;
+    border-bottom: 0;
+  }
+  .category-logo {
+    display: block;
+    width: auto;
+    max-width: 160px;
+    height: 44px;
+    object-fit: contain;
+  }
+  .category-title {
+    display: block;
+  }
+  .vehicle-image-link {
+    display: block;
+    width: fit-content;
+    margin: 0 0 8px;
+    border-bottom: 0;
+  }
+  .vehicle-image {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: #f8f9fb;
+  }
   td.section-label {
     background: var(--label-bg);
     font-weight: 700;
@@ -284,23 +325,26 @@
 </head>
 <body>
 <main>
-<h1>日本国内自動車レーストップカテゴリー（2026年7月時点）</h1>
+<h1>日本国内自動車レーストップカテゴリー（2026年8月時点）</h1>
 <p class="summary">主要3カテゴリーの概要と年間日程を把握できます。</p>
 <nav class="category-nav" aria-label="分類から探す">
   <a href="#vehicle-regulations">車両レギュレーション</a>
   <a href="#sporting-regulations">競技レギュレーション</a>
   <a href="#season-overview">2026年実施概要</a>
   <a href="#season-schedule">2026年日程</a>
+  <a href="super_formula/">SFランキング</a>
+  <a href="super_gt/">SUPER GTランキング</a>
+  <a href="super_taikyu/">S耐ランキング</a>
 </nav>
 <div class="table-wrap">
 <table>
 <caption>
   出典：SUPER FORMULA公式サイト（superformula.net）、JAF公式サイト（motorsports.jaf.or.jp）、GAZOO Racing公式、
   SUPER GT公式サイト（supergt.net）、スーパー耐久公式サイト（supertaikyu.com）、各サーキット公式サイト。
-  レギュレーションは2026年シーズンの最新情報のみを記載。日程・規定は2026年7月時点の情報で、今後変更の可能性があります。<br>
-  <span class="src sf">水色バッジ</span> = スーパーフォーミュラ側の出典　
+  レギュレーションは2026年シーズンの最新情報のみを記載。日程・規定は2026年8月時点の情報で、今後変更の可能性があります。<br>
+  <span class="src sf">緑バッジ</span> = スーパーフォーミュラ側の出典　
   <span class="src gt">赤バッジ</span> = スーパーGT側の出典　
-  <span class="src st">緑バッジ</span> = スーパー耐久側の出典　
+  <span class="src st">青バッジ</span> = スーパー耐久側の出典　
   <span class="src circuit">紫バッジ</span> = 開催サーキットの公式カレンダー　
   <span class="src ticket">橙色バッジ</span> = チケット購入・案内
 </caption>
@@ -308,9 +352,24 @@
 <tr>
   <th>分類</th>
   <th>内訳</th>
-  <th class="col-sf">スーパーフォーミュラ</th>
-  <th class="col-gt">スーパーGT</th>
-  <th class="col-st">スーパー耐久</th>
+  <th class="col-sf">
+    <a class="category-logo-link" href="https://superformula.net/sf3/" target="_blank" rel="noopener">
+      <img class="category-logo" src="https://superformula.net/sf3/images/common/logo.png" alt="SUPER FORMULA公式サイト">
+    </a>
+    <span class="category-title">スーパーフォーミュラ</span>
+  </th>
+  <th class="col-gt">
+    <a class="category-logo-link" href="https://supergt.net/" target="_blank" rel="noopener">
+      <img class="category-logo" src="https://supergt.net/wp-content/uploads/2026/01/2026SeriesLogo.svg" alt="SUPER GT公式サイト">
+    </a>
+    <span class="category-title">スーパーGT</span>
+  </th>
+  <th class="col-st">
+    <a class="category-logo-link" href="https://supertaikyu.com/" target="_blank" rel="noopener">
+      <img class="category-logo" src="https://supertaikyu.com/images/logo_hd.png" alt="スーパー耐久公式サイト">
+    </a>
+    <span class="category-title">スーパー耐久</span>
+  </th>
 </tr>
 </thead>
 <tbody>
@@ -333,14 +392,23 @@
   <td class="section-label" rowspan="3">車両レギュレーション</td>
   <td class="row-label">車体</td>
   <td>
+    <a class="vehicle-image-link" href="https://superformula.net/sf3/about_sf/about_machine/" target="_blank" rel="noopener">
+      <img class="vehicle-image" src="https://superformula.net/sf3/images/about_machine/about_machine01.jpg" alt="SUPER FORMULA SF23の車両イメージ">
+    </a>
     全車がダラーラ製の同じ型の「SF23」を使用。車体による性能差が出にくい。
     <a class="src sf" href="https://superformula.net/sf3/about_sf/about_machine/" target="_blank" rel="noopener">公式：マシン紹介</a>
   </td>
   <td>
+    <a class="vehicle-image-link" href="https://supergt.net/" target="_blank" rel="noopener">
+      <img class="vehicle-image" src="https://supergt.net/wp-content/uploads/2026/07/gttop_26r05_image_pc_h935.jpg" alt="SUPER GTの車両イメージ">
+    </a>
     GT500はトヨタ、日産、ホンダの外観の異なる3車種だが、車体の中心部分や主要部品は共通。GT300は市販スポーツカーを基にした多様なメーカーの車両が参加する。
     <a class="src gt" href="https://supergt.net/about-super-gt/regulation/technical_regulations" target="_blank" rel="noopener">公式：技術規則</a>
   </td>
   <td>
+    <a class="vehicle-image-link" href="https://supertaikyu.com/media/photo_2026_r2.html" target="_blank" rel="noopener">
+      <img class="vehicle-image" src="https://supertaikyu.com/media/images/2026_r2/2026_s-taikyu_r2_gallery-1.jpg" alt="スーパー耐久の車両イメージ">
+    </a>
     市販車に近い車から競技専用車、開発車両までが、性能や車両の種類に応じた11クラスに分かれて参加する。
     <a class="src st" href="https://supertaikyu.com/files/Regulation.pdf" target="_blank" rel="noopener">公式：2026スポーツ規則</a>
   </td>
@@ -484,8 +552,9 @@
     <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">公式：レースカレンダー</a>
   </td>
   <td>
-    全8戦を予定（うち第3戦セパン大会〈マレーシア〉は開催延期）。
+    国内全7大会で開催（第3戦セパン大会〈マレーシア〉は2027年以降へ延期、国内代替大会なし）。
     <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">公式：カレンダー</a>
+    <a class="src gt" href="https://supergt.net/news_race_report/2026%E5%B9%B4super-gt%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E3%81%AE%E5%A4%A7%E4%BC%9A%E6%95%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" target="_blank" rel="noopener">公式：大会数発表</a>
   </td>
   <td>
     全7戦（6サーキットで開催、富士スピードウェイのみ年2回開催）。
@@ -519,7 +588,7 @@
 <tr>
   <td class="row-label">4月 日程／開催場所（サーキット名／所在地）</td>
   <td>
-    第1戦・第2戦：4/4(土)-5(日)　モビリティリゾートもてぎ（開幕戦）／第3戦：4/25(土)-26(日)　オートポリス<br>
+    第1戦・第2戦：4/3(金)-5(日)　モビリティリゾートもてぎ（開幕戦）／第3戦：4/25(土)-26(日)　オートポリス<br>
     <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
     <a class="src circuit" href="https://www.mr-motegi.jp/calendar_m/race.html" target="_blank" rel="noopener">もてぎ公式カレンダー</a>
     <a class="src circuit" href="https://autopolis.jp/ap/member/sports-run/racing-course-schedule/" target="_blank" rel="noopener">オートポリス公式カレンダー</a>
@@ -538,7 +607,7 @@
 <tr>
   <td class="row-label">5月 日程／開催場所（サーキット名／所在地）</td>
   <td>
-    第4戦・第5戦：5/23(土)-24(日)　鈴鹿サーキット（三重県）<br>
+    第4戦・第5戦：5/22(金)-24(日)　鈴鹿サーキット（三重県）<br>
     <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
     <a class="src circuit" href="https://www.suzukacircuit.jp/calendar_s/" target="_blank" rel="noopener">鈴鹿サーキット公式カレンダー</a>
   </td>
@@ -553,7 +622,7 @@
   <td class="row-label">6月 日程／開催場所（サーキット名／所在地）</td>
   <td class="note">開催なし</td>
   <td>
-    第3戦：6/20(土)-21(日)　セパン・インターナショナル・サーキット（マレーシア）※開催延期・チケット販売なし<br>
+    第3戦：セパン・インターナショナル・サーキット（マレーシア）※2027年以降へ延期、2026年開催なし・チケット販売なし<br>
     <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
     <a class="src circuit" href="https://www.sepangcircuit.com/events-listing" target="_blank" rel="noopener">セパンサーキット公式カレンダー</a>
   </td>
@@ -566,7 +635,7 @@
 <tr>
   <td class="row-label">7月 日程／開催場所（サーキット名／所在地）</td>
   <td>
-    第6戦・第7戦：7/18(土)-19(日)　富士スピードウェイ（静岡県）<br>
+    第6戦・第7戦：7/17(金)-19(日)　富士スピードウェイ（静岡県）<br>
     <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
     <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
   </td>
@@ -574,7 +643,6 @@
   <td>
     第4戦：7/4(土)-5(日)　スポーツランドSUGO（宮城県／4時間×2レース）<br>
     第5戦：7/25(土)-26(日)　オートポリス（大分県／5時間レース）<br>
-    <a class="src ticket" href="https://autopolis.jp/ap/super-taikyu-race/" target="_blank" rel="noopener">第5戦 チケット購入・案内（6/12販売開始）</a>
     <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
     <a class="src circuit" href="https://www.sportsland-sugo.co.jp/information/schedule/" target="_blank" rel="noopener">SUGO公式カレンダー</a>
     <a class="src circuit" href="https://autopolis.jp/ap/member/sports-run/racing-course-schedule/" target="_blank" rel="noopener">オートポリス公式カレンダー</a>
@@ -584,14 +652,12 @@
   <td class="row-label">8月 日程／開催場所（サーキット名／所在地）</td>
   <td>
     第8戦：8/8(土)-9(日)　スポーツランドSUGO（宮城県）<br>
-    <a class="src ticket" href="https://www.sportsland-sugo.co.jp/watch/12968/tickets/" target="_blank" rel="noopener">第8戦 チケット購入・案内（6/13 10:00販売開始）</a>
     <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
     <a class="src circuit" href="https://www.sportsland-sugo.co.jp/information/schedule/" target="_blank" rel="noopener">SUGO公式カレンダー</a>
   </td>
   <td>
     第4戦：8/1(土)-2(日)　富士スピードウェイ（静岡県）<br>
     第5戦：8/22(土)-23(日)　鈴鹿サーキット（三重県）<br>
-    <a class="src ticket" href="https://supergt.net/news/%E7%AC%AC4%E6%88%A6-%E5%AF%8C%E5%A3%AB%EF%BC%9A%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E3%81%AE%E3%81%94%E6%A1%88%E5%86%85-2" target="_blank" rel="noopener">第4戦 チケット購入・案内（5/14 10:00販売開始）</a>
     <a class="src ticket" href="https://www.suzukacircuit.jp/supergt_s/ticket/" target="_blank" rel="noopener">第5戦 チケット購入・案内（7/12 11:00販売開始）</a>
     <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
     <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
@@ -613,20 +679,20 @@
 <tr>
   <td class="row-label">10月 日程／開催場所（サーキット名／所在地）</td>
   <td>
-    第9戦・第10戦：10/10(土)-11(日)　富士スピードウェイ（静岡県）<br>
-    <a class="src ticket" href="https://fujispeedway.jp/" target="_blank" rel="noopener">第9・10戦 チケット購入・案内（7/30販売開始予定）</a>
+    第9戦・第10戦：10/9(金)-11(日)　富士スピードウェイ（静岡県）<br>
+    <a class="src ticket" href="https://fujispeedway.jp/motorsports/ticket/2026-sf-rd910" target="_blank" rel="noopener">第9・10戦 チケット購入・案内（7/30 10:00販売開始）</a>
     <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
     <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
   </td>
   <td>
     第7戦：10/17(土)-18(日)　オートポリス（大分県／3時間レース）<br>
-    <a class="src ticket" href="https://autopolis.jp/ap/super-gt/" target="_blank" rel="noopener">第7戦 チケット購入・案内（販売開始予定日未発表）</a>
+    <a class="src ticket" href="https://autopolis.jp/ap/super-gt/" target="_blank" rel="noopener">第7戦 チケット購入・案内（8/29 10:00販売開始予定）</a>
     <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
     <a class="src circuit" href="https://autopolis.jp/ap/member/sports-run/racing-course-schedule/" target="_blank" rel="noopener">オートポリス公式カレンダー</a>
   </td>
   <td>
     第6戦：10/24(土)-25(日)　岡山国際サーキット（岡山県／3時間×2レース）<br>
-    <a class="src ticket" href="https://oic-event.studio.site/" target="_blank" rel="noopener">第6戦 チケット購入・案内（販売開始予定日未発表）</a>
+    <a class="src ticket" href="https://supertaikyu.com/race/round_06.html" target="_blank" rel="noopener">第6戦 チケット情報（販売開始予定日未発表）</a>
     <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
     <a class="src circuit" href="https://www.okayama-international-circuit.jp/event/" target="_blank" rel="noopener">岡山国際サーキット公式カレンダー</a>
   </td>
@@ -634,20 +700,20 @@
 <tr>
   <td class="row-label">11月 日程／開催場所（サーキット名／所在地）</td>
   <td>
-    第11戦・第12戦：11/21(土)-22(日)　鈴鹿サーキット（三重県／最終戦・JAFグランプリ）<br>
+    第11戦・第12戦：11/20(金)-22(日)　鈴鹿サーキット（三重県／最終戦・JAFグランプリ）<br>
     <a class="src ticket" href="https://www.suzukacircuit.jp/ticket_s/index.html" target="_blank" rel="noopener">第11・12戦 チケット購入・案内（9/27販売開始予定）</a>
     <a class="src sf" href="https://superformula.net/sf3/race_taxonomy/2026/" target="_blank" rel="noopener">SF公式カレンダー</a>
     <a class="src circuit" href="https://www.suzukacircuit.jp/calendar_s/" target="_blank" rel="noopener">鈴鹿サーキット公式カレンダー</a>
   </td>
   <td>
     第8戦：11/7(土)-8(日)　モビリティリゾートもてぎ（栃木県／最終戦）<br>
-    <a class="src ticket" href="https://www.mr-motegi.jp/supergt_m/" target="_blank" rel="noopener">第8戦 チケット購入・案内（9/6 11:00販売開始予定）</a>
+    <a class="src ticket" href="https://www.mr-motegi.jp/supergt_m/ticket/" target="_blank" rel="noopener">第8戦 チケット購入・案内（9/6 11:00販売開始予定）</a>
     <a class="src gt" href="https://supergt.net/calendar" target="_blank" rel="noopener">GT公式カレンダー</a>
     <a class="src circuit" href="https://www.mr-motegi.jp/calendar_m/race.html" target="_blank" rel="noopener">もてぎ公式カレンダー</a>
   </td>
   <td>
     第7戦：11/14(土)-15(日)　富士スピードウェイ（静岡県／最終戦）<br>
-    <a class="src ticket" href="https://fujispeedway.jp/" target="_blank" rel="noopener">第7戦 チケット購入・案内（販売開始予定日未発表）</a>
+    <a class="src ticket" href="https://supertaikyu.com/race/round_07.html" target="_blank" rel="noopener">第7戦 チケット情報（販売開始予定日未発表）</a>
     <a class="src st" href="https://supertaikyu.com/" target="_blank" rel="noopener">S耐公式カレンダー</a>
     <a class="src circuit" href="https://www.fsw.tv/motorsports/calendar.html" target="_blank" rel="noopener">富士スピードウェイ公式カレンダー</a>
   </td>
